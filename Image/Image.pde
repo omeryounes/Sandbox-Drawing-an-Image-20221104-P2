@@ -7,6 +7,6 @@ appWidth = width;
 appHeight = height;
 //
 //Rectangle Layout and Image drawing to CANVAS
-rect();
+rect(imageX, imageY, imageWidth, imageHeight);
 //
-image();
+image(pic, imageX, imageY, imageWidth, imageHeight);
