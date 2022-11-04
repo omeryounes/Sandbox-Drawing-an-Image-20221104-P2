@@ -10,12 +10,13 @@ appWidth = width;
 appHeight = height;
 //
 //Population
+pic = loadImage("");
 imageBackgroundX = appWidth*0;
 imageBackgroundY = appHeight*0;
 imageBackgroundWidth = appWidth-1;
 imageBackgroundHeight = appHeight-1;
 //
 //Rectangle Layout and Image drawing to CANVAS
-rect(imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight);
+rect( imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight);
 //
-//image(pic, imageX, imageY, imageWidth, imageHeight);
+//image( pic, imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight);
