@@ -6,3 +6,7 @@ size(1000, 800); //Landscape
 appWidth = width;
 appHeight = height;
 //
+//Rectangle Layout and Image drawing to CANVAS
+rect();
+//
+image();
