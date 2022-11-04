@@ -10,7 +10,7 @@ appWidth = width;
 appHeight = height;
 //
 //Population
-pic = loadImage("");
+pic = loadImage("../Images Used/Obi-wan-star-wars-jedi-23864621-800-600.jpg");
 imageBackgroundX = appWidth*0;
 imageBackgroundY = appHeight*0;
 imageBackgroundWidth = appWidth-1;
