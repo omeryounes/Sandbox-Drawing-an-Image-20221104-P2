@@ -1,4 +1,5 @@
 //Background Image Example
+//Reivew issues of overlapping colour and opacity
 //
 //Global Variables
 int appWidth, appHeight;
