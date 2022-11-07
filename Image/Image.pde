@@ -10,7 +10,16 @@ appWidth = width;
 appHeight = height;
 //
 //Aspect Ratio Calculations
-
+//Obi-wan-star-wars-jedi-23864621-800-600.jpg
+int picWidth = 800;
+int picHeight = 600;
+//Image Orientation: Landscape, Portrait, Square
+if ( picWidth >= picHeight ) { //True if Landscape or Square
+  largerDimension = picWidth;
+  smallerDimension = picHeight;
+  widthLarger = true;
+} else { //False if Portrait
+}
 //
 //Population
 pic = loadImage("../Images Used/Obi-wan-star-wars-jedi-23864621-800-600.jpg");
