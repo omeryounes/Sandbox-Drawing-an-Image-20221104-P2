@@ -1,5 +1,7 @@
 //Global Variables
 int appWidth, appHeight;
+float smallerDimension, largerDimension;
+Boolean widthLarger=false, heightLarger=false;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
 PImage pic;
 Boolean nightMode=false;
@@ -23,6 +25,11 @@ if ( picWidth >= picHeight ) { //True if Landscape or Square
   smallerDimension = picWidth;
   heightLarger = true;
 }
+//
+if ( widthLarger == true ) imageWidthRatio = largerDimension / largerDimension;
+if ( widthLarger == true ) imageHeightRatio = smallerDimension / largerDimension;
+if ( heightLarger == true ) imageWidthRatio = smallerDimension / largerDimension;
+if ( heightLarger == true ) imageHeightRatio = largerDimension / largerDimension;
 //
 //Population
 pic = loadImage("../Images Used/Obi-wan-star-wars-jedi-23864621-800-600.jpg");
