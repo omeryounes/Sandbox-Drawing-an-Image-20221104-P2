@@ -19,6 +19,9 @@ if ( picWidth >= picHeight ) { //True if Landscape or Square
   smallerDimension = picHeight;
   widthLarger = true;
 } else { //False if Portrait
+  largerDimension = picHeight;
+  smallerDimension = picWidth;
+  heightLarger = true;
 }
 //
 //Population
