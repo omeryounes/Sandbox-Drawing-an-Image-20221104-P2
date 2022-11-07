@@ -2,12 +2,15 @@
 int appWidth, appHeight;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
 PImage pic;
-Boolean nightMode=true;
+Boolean nightMode=false;
 //
 size(800, 600); //Landscape
-//Copy Display Algorithm
+//Copy Display Algorithm from Hello World
 appWidth = width;
 appHeight = height;
+//
+//Aspect Ratio Calculations
+
 //
 //Population
 pic = loadImage("../Images Used/Obi-wan-star-wars-jedi-23864621-800-600.jpg");
