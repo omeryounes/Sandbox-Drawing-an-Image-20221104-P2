@@ -13,6 +13,8 @@ appHeight = height;
 //
 //Aspect Ratio Calculations
 //Obi-wan-star-wars-jedi-23864621-800-600.jpg
+//Note: Dimensions are found in the image 
+//      file / Right Click / Properties / Details
 int picWidth = 800;
 int picHeight = 600;
 //Image Orientation: Landscape, Portrait, Square
