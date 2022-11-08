@@ -2,6 +2,7 @@
 int appWidth, appHeight;
 float smallerDimension, largerDimension;
 Boolean widthLarger=false, heightLarger=false;
+float imageWidthRatio, imageHeightRatio;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
 PImage pic;
 Boolean nightMode=false;
@@ -32,8 +33,8 @@ if ( widthLarger == true ) imageHeightRatio = smallerDimension / largerDimension
 if ( heightLarger == true ) imageWidthRatio = smallerDimension / largerDimension;
 if ( heightLarger == true ) imageHeightRatio = largerDimension / largerDimension;
 //
-picWidthAdjusted = picWidth * imageWidthRatio;
-picHeightAdjusted = picHeight = imageHeightRatio;
+picWidthAdjusted = appWidth * imageWidthRatio;
+picHeightAdjusted = appHeight = imageHeightRatio;
 //
 //Population
 pic = loadImage("../Images Used/Obi-wan-star-wars-jedi-23864621-800-600.jpg");
