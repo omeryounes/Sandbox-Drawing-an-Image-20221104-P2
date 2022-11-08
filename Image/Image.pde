@@ -39,7 +39,7 @@ picHeightAdjusted = appHeight * imageHeightRatio;
 //
 //Developer verified variables
 println (appWidth, picWidth, picWidthAdjusted);
-println (appHeight, );
+println (appHeight, picHeight, picHeightAdjusted);
 //
 //Population
 pic = loadImage("../Images Used/Obi-wan-star-wars-jedi-23864621-800-600.jpg");
@@ -55,4 +55,5 @@ backgroundImageHeight = appHeight-1;
 if (nightMode == false) tint(255, 128); //Gray Scale: use 1/2 tint value for white (i.e. 128/256=1/2)
 if (nightMode == true) tint(64, 64, 40); //RGB: Night Mode
 //
-image( pic, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight);
+//image( pic, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight);
+image( pic, backgroundImageX, backgroundImageY, picWidthAdjusted, picHeightAdjusted);
