@@ -37,22 +37,25 @@ float picWidthAdjusted=0.0, picHeightAdjusted=0.0;
 //Better Iamge Stretch Algorithm
 if ( appWidth >= picWidth ) {
   picWidthAdjusted = picWidth;
+  //
   if ( widthLarger == true ) imageWidthRatio = largerDimension / largerDimension;
   if ( heightLarger == true ) imageWidthRatio = smallerDimension / largerDimension;
+  //
+  if ( appHeight >= picHeightAdjusted ) {
+    picHeightAdjusted = picHeight;
+    if ( widthLarger == true ) imageHeightRatio = smallerDimension / largerDimension;
+    if ( heightLarger == true ) imageHeightRatio = largerDimension / largerDimension;
+  } else {
+    //Image smaller than CANVAS needs separate algorithm
+  }
 } else {
   //Image smaller than CANVAS needs separate algorithm
 }
-if ( appHeight >= picHeight ) {
-  picHeightAdjusted = picHeight;
-  if ( widthLarger == true ) imageHeightRatio = smallerDimension / largerDimension;
-  if ( heightLarger == true ) imageHeightRatio = largerDimension / largerDimension;
-} else {
-  //Image smaller than CANVAS needs separate algorithm
-}
-
-//picWidthAdjusted = appWidth * imageWidthRatio;
-//picHeightAdjusted = appHeight * imageHeightRatio;
 //
+println(appWidth, imageWidthRatio);
+println(appHeight, imageHeightRatio);
+picWidthAdjusted = appWidth * imageWidthRatio;
+picHeightAdjusted = appWidth * imageHeightRatio;
 //Developer verified variables
 println (appWidth, picWidth, picWidthAdjusted);
 println (appHeight, picHeight, picHeightAdjusted);
