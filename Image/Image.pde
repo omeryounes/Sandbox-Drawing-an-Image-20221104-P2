@@ -27,12 +27,19 @@ if ( picWidth >= picHeight ) { //True if Landscape or Square
   smallerDimension = picWidth;
   heightLarger = true;
 }
-//
-if ( widthLarger == true ) imageWidthRatio = largerDimension / largerDimension;
-if ( widthLarger == true ) imageHeightRatio = smallerDimension / largerDimension;
-if ( heightLarger == true ) imageWidthRatio = smallerDimension / largerDimension;
-if ( heightLarger == true ) imageHeightRatio = largerDimension / largerDimension;
-//
+/* Older algorithm
+ if ( widthLarger == true ) imageWidthRatio = largerDimension / largerDimension;
+ if ( widthLarger == true ) imageHeightRatio = smallerDimension / largerDimension;
+ if ( heightLarger == true ) imageWidthRatio = smallerDimension / largerDimension;
+ if ( heightLarger == true ) imageHeightRatio = largerDimension / largerDimension;
+ */
+//Better Iamge Stretch Algorithm
+if ( appWidth >= picWidth ) {
+  picWidthAdjusted = picWidth;
+} else {
+  if ( widthLarger == true ) imageWidthRatio = largerDimension / largerDimension;
+  if ( heightLarger == true ) imageWidthRatio = smallerDimension / largerDimension;
+}
 float picWidthAdjusted, picHeightAdjusted;
 picWidthAdjusted = appWidth * imageWidthRatio;
 picHeightAdjusted = appHeight * imageHeightRatio;
