@@ -81,3 +81,4 @@ if (nightMode == true) tint(64, 64, 40); //RGB: Night Mode
 //
 //image( pic, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight);
 image( pic, backgroundImageX, backgroundImageY, picWidthAdjusted, picHeightAdjusted);
+gyghghghgh
